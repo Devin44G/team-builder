@@ -1,5 +1,7 @@
 import React from 'react';
 import{useState} from 'react';
+import styled from 'styled-components';
+import './comp-styles.css';
 
 function MembersForm(props) {
 
@@ -29,37 +31,52 @@ function MembersForm(props) {
     });
   };
 
+// Styles . . .
+  const Button = styled.button`
+    margin-top: 2rem;
+    border-radius: 5px;
+  `;
+
 // Rendering Form
   return(
     <form onSubmit={onSubmit}>
       {/* NAME */}
-      <label htmlFor="name">Member Name: </label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        value={teamMem.name}
-        onChange={changes}
-      />
+      <div className="info">
+        <label htmlFor="name">Member Name: </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={teamMem.name}
+          onChange={changes}
+          className="Input"
+        />
+      </div>
       {/* JERSEY NUMBER */}
-      <label htmlFor="jerseyNo">Jersey NO: </label>
-      <input
-        type="number"
-        id="jerseyNo"
-        name="jerseyNo"
-        value={teamMem.jerseyNo}
-        onChange={changes}
-      />
+      <div className="info">
+        <label htmlFor="jerseyNo">Jersey NO: </label>
+        <input
+          type="number"
+          id="jerseyNo"
+          name="jerseyNo"
+          value={teamMem.jerseyNo}
+          onChange={changes}
+          className="Input"
+        />
+      </div>
       {/* ROLE */}
-      <label htmlFor="role">Position: </label>
-      <input
-        type="text"
-        id="role"
-        name="role"
-        value={teamMem.role}
-        onChange={changes}
-      />
-      <button type="submit">Add Member</button>
+      <div className="info">
+        <label htmlFor="role">Position: </label>
+        <input
+          type="text"
+          id="role"
+          name="role"
+          value={teamMem.role}
+          onChange={changes}
+          className="Input"
+        />
+      </div>
+      <Button type="submit">Add Member</Button>
     </form>
   );
 }
