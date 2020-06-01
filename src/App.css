@@ -1,0 +1,19 @@
+html {
+  font-size: 62.5%;
+  background: url('imgs/football.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12rem;
+  align-items: center;
+}
+
+.App h1 {
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}

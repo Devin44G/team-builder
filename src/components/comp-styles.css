@@ -1,0 +1,39 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Input {
+  border-radius: 5px;
+  border: solid 1px white;
+  padding: .5rem 1rem;
+  background-color: black;
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.bg {
+  position: absolute;
+  border-radius: 5px;
+  height: 250px;
+  width: 200px;
+  background-color: white;
+  opacity: 1;
+  z-index: -1;
+  opacity: .5;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
